@@ -1,0 +1,21 @@
+
+# DataSource settings
+spring:
+  application:
+    name: file-reader
+  datasource:
+    url: jdbc:h2:mem:file-content
+    driverClassName: org.h2.Driver
+    username: user
+    password: password
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
